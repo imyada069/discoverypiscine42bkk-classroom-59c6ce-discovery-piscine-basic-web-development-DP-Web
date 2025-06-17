@@ -1,0 +1,46 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure the table takes up the full width and height of the viewport */
+table {
+    width: 100%;
+    height: 100%;
+    table-layout: auto; /* Allow the table to resize based on content */
+    border-collapse: collapse;
+}
+
+/* Styling for each cell */
+td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    color: white;
+    height: 50%;  /* Cells take up half the height of the screen */
+}
+
+/* Colors for the boxes */
+.box1 {
+    background-color: #3498db; /* Light Blue */
+}
+
+.box2 {
+    background-color: #e74c3c; /* Red */
+}
+
+/* Make the text and layout more flexible on smaller screens */
+@media (max-width: 768px) {
+    td {
+        font-size: 20px; /* Smaller font for tablets and mobile devices */
+    }
+}
+
+@media (max-width: 480px) {
+    td {
+        font-size: 16px; /* Even smaller font for very small screens */
+    }
+}
