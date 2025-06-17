@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Background</title>
+    <link rel="stylesheet" href="backgroound.css">
+</head>
+<body>
+    <button id="colorBtn">Change Background Color</button>
+    <script>
+        function getRandomColor() {
+            // Generate a random hex color
+            return '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+        }
+        document.getElementById('colorBtn').onclick = function() {
+            document.body.style.backgroundColor = getRandomColor();
+        };
+    </script>
+</body>
+</html>
