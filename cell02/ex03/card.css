@@ -1,0 +1,107 @@
+body {
+  background: #f4f6fb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 32px 28px 24px 28px;
+  width: 320px;
+  text-align: center;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile-table td {
+  border: none;
+  padding: 0;
+}
+
+.profile-pic-cell {
+  padding-bottom: 10px;
+}
+
+.profile-pic {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border: 2.5px solid #e0e7ef;
+}
+
+.login {
+  font-weight: 500;
+  font-size: 1.08em;
+  color: #444;
+  padding-bottom: 4px;
+  letter-spacing: 0.2px;
+}
+
+.desc {
+  font-size: 0.98em;
+  color: #888;
+  padding-bottom: 14px;
+  font-style: italic;
+  letter-spacing: 0.1px;
+}
+
+.socials {
+  padding-bottom: 18px;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  margin: 0 5px;
+  vertical-align: middle;
+  border-radius: 5px;
+  transition: box-shadow 0.18s, transform 0.18s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.socials img:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+  transform: translateY(-2px) scale(1.08);
+}
+
+.contact-cell {
+  padding-top: 8px;
+}
+
+.contact-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 36px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  letter-spacing: 0.5px;
+}
+
+.contact-btn:hover {
+  background: #444;
+  color: #f4f6fb;
+}
